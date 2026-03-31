@@ -11,13 +11,6 @@ Despliegue del sistema operativo Ubuntu 24.04 LTS en hardware físico.
 * **Storage:** Implementación de LVM (Logical Volume Management).
 * **Identity:** Estándar de nomenclatura corporativa aplicado.
 * **Security Baseline:** Activación de OpenSSH Server.
-
-### 2. [Network Provisioning](./02-Network-Provisioning/)
-Resolución de problemas de conectividad post-instalación (Offline deployment).
-* **Troubleshooting:** Reconstrucción manual del árbol de directorios de Netplan.
-* **Configuration:** Autoría de archivos YAML para handshake DHCP.
-* **Validation:** Pruebas de conectividad ICMP exitosas.
-
 ---
 
 ## 🛠️ Próximos Pasos (Fase de Blindaje)
