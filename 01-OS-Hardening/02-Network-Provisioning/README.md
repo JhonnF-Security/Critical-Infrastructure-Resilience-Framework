@@ -1,22 +1,19 @@
-# Phase 1: OS Hardening & Infrastructure Baseline
+# Fase 1.2: Aprovisionamiento de Red Manual (Netplan)
 
-Este módulo documenta el despliegue inicial y el blindaje del nodo central del **Critical Infrastructure Resilience Framework (CIRF)**.
+## Desafío Técnico
+Durante la instalación offline, el instalador de Ubuntu no generó los archivos de configuración de red, dejando el nodo sin conectividad y con el stack de red vacío.
 
-## 🚀 Hitos de Implementación
+## Resolución (Troubleshooting)
+Se procedió a realizar una configuración manual del subsistema de red para habilitar el handshake DHCP con el router local.
 
-Para este nodo (`cirf-srv-01`), hemos superado la fase de despliegue físico y aprovisionamiento de red bajo un entorno de alta disponibilidad.
+### 1. Reconstrucción de la Configuración
+Se creó manualmente el archivo de configuración Netplan definiendo la interfaz física `enp0s25` y habilitando el protocolo IPv4 dinámico.
+![Configuración YAML](./assets/netplan_config.jpg)
 
+### 2. Validación de Interfaz
+Tras aplicar los cambios con `netplan apply`, se verificó la asignación correcta de la dirección IP privada dentro del segmento de la red local.
+![Asignación de IP](./assets/ip_address.jpg)
 
-### 2. [Network Provisioning](./02-Network-Provisioning/)
-Resolución de problemas de conectividad post-instalación (Offline deployment).
-* **Troubleshooting:** Reconstrucción manual del árbol de directorios de Netplan.
-* **Configuration:** Autoría de archivos YAML para handshake DHCP.
-* **Validation:** Pruebas de conectividad ICMP exitosas.
-
----
-
-## 🛠️ Próximos Pasos (Fase de Blindaje)
-- [ ] Cambio de puerto SSH por defecto (Security through obscurity).
-- [ ] Configuración de SSH Keys (RSA/Ed25519) y desactivación de contraseñas.
-- [ ] Implementación de Firewall (UFW) con políticas restrictivas.
-- [ ] Auditoría de logs inicial.
+### 3. Prueba de Enlace Global
+Verificación de la salida a internet y resolución de nombres mediante pruebas de ICMP (Ping) hacia servidores DNS externos.
+![Prueba de Ping](./assets/ping_test.jpg)
