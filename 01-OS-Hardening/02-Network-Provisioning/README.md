@@ -17,3 +17,8 @@ Tras aplicar los cambios con `netplan apply`, se verificó la asignación correc
 ### 3. Prueba de Enlace Global
 Verificación de la salida a internet y resolución de nombres mediante pruebas de ICMP (Ping) hacia servidores DNS externos.
 ![Prueba de Ping](./assets/ping_test.jpg)
+
+### 4. Validación de Acceso Remoto (SSH)
+Como prueba final de conectividad y funcionalidad del servicio, se realizó una conexión exitosa desde una estación de trabajo externa utilizando el protocolo SSH. Esto confirma que el server está listo para ser gestionado de forma "Headless" (sin monitor físico).
+
+![Conexión SSH Exitosa](./assets/ssh_remote_success.jpg)
