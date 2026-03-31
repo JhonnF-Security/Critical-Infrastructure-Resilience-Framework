@@ -7,12 +7,20 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Limpieza de Residuos:** Eliminar paquetes innecesarios con `sudo apt autoremove --purge`.
 * [ ] **Parcheo Automático:** Configurar `unattended-upgrades` para actualizaciones críticas de seguridad.
 
+      Hito: Optimización de Energía (Headless Mode)- Siguiendo el estándar de actualización inicial y preparación de entorno.
+      * Acción: Se configuró logind.conf para ignorar el Lid Switch.
+      * Razón: Permitir operación 24/7 con la tapa cerrada en el búnker de Manizales.
+
 ## 🔑 Fase 2: Blindaje de Acceso Remoto (SSH)
 * [ ] **Protocolo Seguro:** Forzar el uso exclusivo de `SSH Protocol 2`.
 * [ ] **Deshabilitar Root Login:** Configurar `PermitRootLogin no` en `/etc/ssh/sshd_config`.
 * [ ] **Autenticación por Llaves:** Deshabilitar contraseñas (`PasswordAuthentication no`) y usar llaves RSA de 4096 bits.
 * [ ] **Cambio de Puerto:** Mover el servicio del puerto 22 a un puerto no estándar (seguridad por oscuridad básica).
-
+      
+      Hito: Ofuscación y Reconfiguración de Sockets (Ubuntu 24.04) - Aplicando el estándar de reducción de superficie de ataque. 
+      * Acción: Cambio de puerto 22 a [TU_PUERTO] mediante el override de ssh.socket.
+      * Razón: Invisible para escaneos de IA y bots automatizados.
+      
 ## 👤 Fase 3: Gestión de Identidades y Privilegios
 * [ ] **Principio de Menor Privilegio:** Eliminar usuarios inactivos y restringir el uso de `sudo`.
 * [ ] **Políticas de Contraseña:** Implementar `libpam-pwquality` para forzar complejidad y rotación.
