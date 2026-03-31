@@ -17,7 +17,7 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Autenticación por Llaves:** Deshabilitar contraseñas (`PasswordAuthentication no`) y usar llaves RSA de 4096 bits.
 * [ ] **Cambio de Puerto:** Mover el servicio del puerto 22 a un puerto no estándar (seguridad por oscuridad básica).
       
-      Hito: Ofuscación y Reconfiguración de Sockets (Ubuntu 24.04) - Aplicando el estándar de reducción de superficie de ataque. 
+      Hito: Ofuscación y Reconfiguración de Sockets (Ubuntu 24.04)-Aplicando el estándar de reducción de superficie de ataque. 
       * Acción: Cambio de puerto 22 a [****] mediante el override de ssh.socket.
       * Razón: Invisible para escaneos de IA y bots automatizados.
       
