@@ -27,9 +27,9 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
         Solo los dispositivos con la llave privada autorizada pueden intentar el handshake de conexión.
       * Nivel de Seguridad: Alineado con estándares bancarios y de infraestructura crítica.
 
-      ### ⚠️ Notas de Operación y Resiliencia (Disaster Recovery)
 
 > [!IMPORTANT]
+> ⚠️ Nota de Operación y Resiliencia (Disaster Recovery)
 > **Gestión de Llaves Criptográficas:** Al haber deshabilitado la `PasswordAuthentication`, la llave privada generada (`id_rsa`) es ahora el **único vector de acceso** al servidor. 
 > 
 > * **Riesgo:** Si la estación de trabajo principal sufre un fallo de hardware o se formatea sin respaldo de la carpeta `.ssh`, se producirá un **Lockout** (bloqueo total) del server.
