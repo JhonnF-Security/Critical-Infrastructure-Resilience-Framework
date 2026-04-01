@@ -32,16 +32,10 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 > [!IMPORTANT]
 > **Gestión de Llaves Criptográficas:** Al haber deshabilitado la `PasswordAuthentication`, la llave privada generada (`id_rsa`) es ahora el **único vector de acceso** al servidor. 
 > 
-> * **Riesgo:** Si la estación de trabajo principal sufre un fallo de hardware o se formatea sin respaldo de la carpeta `.ssh`, se producirá un **Lockout** (bloqueo total) del búnker.
+> * **Riesgo:** Si la estación de trabajo principal sufre un fallo de hardware o se formatea sin respaldo de la carpeta `.ssh`, se producirá un **Lockout** (bloqueo total) del server.
 > * **Protocolo de Respaldo:** Se recomienda realizar una copia de seguridad de los archivos `id_rsa` e `id_rsa.pub` en un entorno cifrado (ej. Bóveda de Bitwarden o unidad física offline).
 > * **Ubicación en Windows:** `C:\Users\[TuUsuario]\.ssh\`
-
-Valor: El servidor ahora es inmune a ataques de fuerza bruta por diccionario. Solo los dispositivos con la llave privada autorizada pueden intentar el handshake de conexión.
-
-Nivel de Seguridad: Alineado con estándares bancarios y de infraestructura crítica.
-
-      
-      
+   
 ## 👤 Fase 3: Gestión de Identidades y Privilegios
 * [ ] **Principio de Menor Privilegio:** Eliminar usuarios inactivos y restringir el uso de `sudo`.
 * [ ] **Políticas de Contraseña:** Implementar `libpam-pwquality` para forzar complejidad y rotación.
