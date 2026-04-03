@@ -78,9 +78,27 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
       * Tests realizados:** 257
       * Resultado:** Nivel de seguridad "Alto" para entorno de infraestructura inicial.
 
-![Reporte Final de Lynis](./assets/Lynis_security_scan_details)
+![Reporte Final de Lynis](./assets/Lynis_security_scan_details.png)
 
 > **Nota:** Se logró un puntaje superior al promedio (50) mediante la aplicación de las fases previas de blindaje de SSH, gestión de privilegios y políticas de red.
+
+      🚩Hito: Verificación de Integridad y Detección de Intrusos (FIM)
+      * Se validó el funcionamiento de **AIDE** mediante un simulacro de inyección de archivos en directorios protegidos del sistema (`/etc/`).
+      * Resultado del Test:** El sistema identificó correctamente la anomalía, generando un reporte de alerta por entrada no autorizada.
+      * Evidencia:** `Summary: Total number of files: [139480] | Added entries: 1`
+
+**🎯 Estado Final del Hardening:** 100% Completado.
+El servidor cuenta con una línea base de seguridad robusta, monitoreo de integridad activo y un Hardening Index de 62 (Lynis), superando los estándares industriales para infraestructuras iniciales.
+
+### ✅ Fase de Hardening Completada: Evidencia de Control de Integridad (FIM)
+
+Para validar el sistema de Detección de Intrusos (AIDE), se realizó una **PoC (Proof of Concept)** inyectando un archivo simulado en un directorio protegido (`/etc/`).
+
+El sistema AIDE identificó correctamente la anomalía en el siguiente reporte de integridad:
+
+![PoC: Detección Exitosa de Intruso con AIDE](./assets/prueba_intrucion.png)
+
+* **Impacto:** Esta captura demuestra la capacidad del server CIRF de detectar cualquier manipulación no autorizada en archivos críticos del sistema, asegurando la resiliencia de la infraestructura de red.
 
 ---
 **Nota:** Este checklist debe aplicarse en entornos de laboratorio antes de su despliegue en producción.
