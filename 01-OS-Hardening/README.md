@@ -42,13 +42,13 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Banner de Advertencia:** Configurar `/etc/issue.net` con avisos legales de acceso restringido.
 
       🚩Hito: Implementación de Políticas de Identidad y Acceso (IAM)
-      Acción: Instalación de libpam-pwquality para forzar entropía en credenciales
+      * Acción: Instalación de libpam-pwquality para forzar entropía en credenciales
       y despliegue de banner legal de advertencia en /etc/issue.net.
 
-      Valor: Se establece un marco legal para auditorías y se asegura que cualquier
+      * Valor: Se establece un marco legal para auditorías y se asegura que cualquier
       escalada de privilegios (sudo) requiera una contraseña de alta complejidad.
 
-      Nivel de Seguridad: Cumplimiento con políticas de hardening tipo CIS (Center for Internet Security).
+      * Nivel de Seguridad: Cumplimiento con políticas de hardening tipo CIS (Center for Internet Security).
 
 ![Aviso Legal de Acceso SSH](./assets/ssh_legal_banner.png)
 
@@ -58,6 +58,15 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Política Drop por Defecto:** Configurar `UFW` para denegar todo el tráfico entrante excepto puertos autorizados.
 * [ ] **Prevención de Fuerza Bruta:** Implementar `Fail2Ban` para monitorear y bloquear IPs tras intentos fallidos de conexión.
 * [ ] **Deshabilitar IPv6:** Si no es requerido, deshabilitar IPv6 para reducir vectores de ataque.
+
+      🚩Hito 4: Implementación de Perímetro y Defensa Inteligente
+      * Acción: Configuración de UFW (Firewall) con política de denegación por defecto
+        y despliegue de Fail2Ban para mitigación de ataques de fuerza bruta.
+      * Valor: El servidor ahora detecta patrones de ataque y bloquea dinámicamente las direcciones IP maliciosas,
+        reduciendo la carga del procesador ante escaneos masivos.
+      * Nivel de Seguridad: Protección activa en Capa 3 y Capa 7 (Aplicación).
+
+(./assets/fail2ban-client status sshd.png)
 
 ## 🔍 Fase 5: Auditoría y Monitoreo de Integridad
 * [ ] **Escaneo Inicial:** Realizar auditoría con `Lynis` para obtener el Hardening Index actual.
