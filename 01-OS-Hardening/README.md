@@ -41,6 +41,19 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Políticas de Contraseña:** Implementar `libpam-pwquality` para forzar complejidad y rotación.
 * [ ] **Banner de Advertencia:** Configurar `/etc/issue.net` con avisos legales de acceso restringido.
 
+      🚩Hito: Implementación de Políticas de Identidad y Acceso (IAM)
+      Acción: Instalación de libpam-pwquality para forzar entropía en credenciales
+      y despliegue de banner legal de advertencia en /etc/issue.net.
+
+      Valor: Se establece un marco legal para auditorías y se asegura que cualquier
+      escalada de privilegios (sudo) requiera una contraseña de alta complejidad.
+
+      Nivel de Seguridad: Cumplimiento con políticas de hardening tipo CIS (Center for Internet Security).
+
+![Aviso Legal de Acceso SSH](./assets/ssh_legal_banner.png)
+
+* **Impacto:** Establece un marco de responsabilidad legal ante accesos no autorizados y disuade escaneos manuales de intrusos.
+
 ## 🌐 Fase 4: Seguridad de Red y Firewall
 * [ ] **Política Drop por Defecto:** Configurar `UFW` para denegar todo el tráfico entrante excepto puertos autorizados.
 * [ ] **Prevención de Fuerza Bruta:** Implementar `Fail2Ban` para monitorear y bloquear IPs tras intentos fallidos de conexión.
