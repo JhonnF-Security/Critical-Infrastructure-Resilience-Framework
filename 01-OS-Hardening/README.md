@@ -59,7 +59,7 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 * [ ] **Prevención de Fuerza Bruta:** Implementar `Fail2Ban` para monitorear y bloquear IPs tras intentos fallidos de conexión.
 * [ ] **Deshabilitar IPv6:** Si no es requerido, deshabilitar IPv6 para reducir vectores de ataque.
 
-      🚩Hito 4: Implementación de Perímetro y Defensa Inteligente
+      🚩Hito: Implementación de Perímetro y Defensa Inteligente
       * Acción: Configuración de UFW (Firewall) con política de denegación por defecto
         y despliegue de Fail2Ban para mitigación de ataques de fuerza bruta.
       * Valor: El servidor ahora detecta patrones de ataque y bloquea dinámicamente las direcciones IP maliciosas,
@@ -71,6 +71,16 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 ## 🔍 Fase 5: Auditoría y Monitoreo de Integridad
 * [ ] **Escaneo Inicial:** Realizar auditoría con `Lynis` para obtener el Hardening Index actual.
 * [ ] **Check de Integridad:** Configurar `AIDE` (Advanced Intrusion Detection Environment) para monitorear cambios en archivos críticos.
+
+      🚩Hito 5: Auditoría de Seguridad y Línea Base
+      * Se realizó una auditoría completa con **Lynis** para cuantificar el nivel de endurecimiento del sistema operativo (OS Hardening).
+      * Hardening Index obtenido:** 62/100
+      * Tests realizados:** 257
+      * Resultado:** Nivel de seguridad "Alto" para entorno de infraestructura inicial.
+
+![Reporte Final de Lynis](./assets/Lynis_security_scan_details)
+
+> **Nota:** Se logró un puntaje superior al promedio (50) mediante la aplicación de las fases previas de blindaje de SSH, gestión de privilegios y políticas de red.
 
 ---
 **Nota:** Este checklist debe aplicarse en entornos de laboratorio antes de su despliegue en producción.
