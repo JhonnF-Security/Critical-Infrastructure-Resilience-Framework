@@ -66,7 +66,7 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
         reduciendo la carga del procesador ante escaneos masivos.
       * Nivel de Seguridad: Protección activa en Capa 3 y Capa 7 (Aplicación).
       
-![Estado del Centinela Fail2Ban](./assets/image_0.png)
+![Estado del Centinela Fail2Ban](./assets/fail2ban_client_status_sshd.png)
 
 ## 🔍 Fase 5: Auditoría y Monitoreo de Integridad
 * [ ] **Escaneo Inicial:** Realizar auditoría con `Lynis` para obtener el Hardening Index actual.
