@@ -50,7 +50,8 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 
       Nivel de Seguridad: Cumplimiento con políticas de hardening tipo CIS (Center for Internet Security).
 
-![Aviso Legal de Acceso SSH](./assets/ssh_legal_banner.png)
+      ![Aviso Legal de Acceso SSH]
+                                  (./assets/ssh_legal_banner.png)
 
 * **Impacto:** Establece un marco de responsabilidad legal ante accesos no autorizados y disuade escaneos manuales de intrusos.
 
