@@ -52,7 +52,7 @@ Este estándar define los controles de seguridad mínimos obligatorios para redu
 
 ![Aviso Legal de Acceso SSH](./assets/ssh_legal_banner.png)
 
-* **Impacto:** Establece un marco de responsabilidad legal ante accesos no autorizados y disuade escaneos manuales de intrusos.
+* **⚠️Impacto:** Establece un marco de responsabilidad legal ante accesos no autorizados y disuade escaneos manuales de intrusos.
 
 ## 🌐 Fase 4: Seguridad de Red y Firewall
 * [ ] **Política Drop por Defecto:** Configurar `UFW` para denegar todo el tráfico entrante excepto puertos autorizados.
