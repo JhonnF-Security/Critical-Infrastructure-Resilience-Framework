@@ -11,6 +11,8 @@ Esta suite es una herramienta profesional diseñada para el **Hardening (Fortifi
 - **Reportes Ejecutivos:** Genera un archivo `.txt` listo para entregar al cliente final con el estado de cumplimiento.
 - 
 # 1. Descargar Rapida Script
+### 1. Descarga Rápida del Script
+```bash
 curl -O https://raw.githubusercontent.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/main/01-OS-Hardening/LSHB-Shield-Suite/LSHB-Shield-Suite.sh
 
 # 2. Descargar el framework completo
