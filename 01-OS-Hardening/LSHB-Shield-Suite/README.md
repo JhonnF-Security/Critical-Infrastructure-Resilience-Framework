@@ -17,5 +17,5 @@ git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-
 cd Critical-Infrastructure-Resilience-Framework/01-OS-Hardening/LSHB-Shield-Suite/
 
 # 3. Dar permisos y ejecutar
-chmod +x LSHB-Shield-Suite.sh
-sudo ./LSHB-Shield-Suite.sh
+    chmod +x LSHB-Shield-Suite.sh
+    sudo ./LSHB-Shield-Suite.sh
