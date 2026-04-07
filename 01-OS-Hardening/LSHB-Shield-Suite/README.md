@@ -9,13 +9,16 @@ Esta suite es una herramienta profesional diseñada para el **Hardening (Fortifi
 - **Seguridad a nivel Kernel:** Desactivación completa de IPv6 para prevenir exfiltración de datos.
 - **Firewall Estricto:** Configuración automática de UFW con políticas de denegación por defecto.
 - **Reportes Ejecutivos:** Genera un archivo `.txt` listo para entregar al cliente final con el estado de cumplimiento.
+- 
+# 1. Descargar Rapida Script
+curl -O https://raw.githubusercontent.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/main/01-OS-Hardening/LSHB-Shield-Suite/LSHB-Shield-Suite.sh
 
-# 1. Descargar el framework completo
+# 2. Descargar el framework completo
 git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
 
-# 2. Entrar a la carpeta del script de Blindaje
+# 3. Entrar a la carpeta del script de Blindaje
 cd Critical-Infrastructure-Resilience-Framework/01-OS-Hardening/LSHB-Shield-Suite/
 
-# 3. Dar permisos y ejecutar
+# 4. Dar permisos y ejecutar
     chmod +x LSHB-Shield-Suite.sh
     sudo ./LSHB-Shield-Suite.sh
