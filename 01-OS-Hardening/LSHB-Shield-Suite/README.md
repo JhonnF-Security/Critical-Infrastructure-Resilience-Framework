@@ -13,13 +13,15 @@ Esta suite es una herramienta profesional diseñada para el **Hardening (Fortifi
 
 ### 1. Descarga Rápida del Script
 
-curl -sO [https://raw.githubusercontent.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/main/01-OS-Hardening/LSHB-Shield-Suite/LSHB-Shield-Suite.sh](https://raw.githubusercontent.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/main/01-OS-Hardening/LSHB-Shield-Suite/LSHB-Shield-Suite.sh) && chmod +x LSHB-Shield-Suite.sh && sudo ./LSHB-Shield-Suite.sh
+     curl -sO https://raw.githubusercontent.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/main/01-OS-Hardening/LSHB-Shield-Suite/LSHB-Shield-Suite.sh
 
 # 2. Descargar el framework completo
-git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
+
+     git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
 
 # 3. Entrar a la carpeta del script de Blindaje
-cd Critical-Infrastructure-Resilience-Framework/01-OS-Hardening/LSHB-Shield-Suite/
+
+     cd Critical-Infrastructure-Resilience-Framework/01-OS-Hardening/LSHB-Shield-Suite/
 
 # 4. Dar permisos y ejecutar
     chmod +x LSHB-Shield-Suite.sh
