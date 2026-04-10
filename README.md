@@ -38,7 +38,7 @@ Ejemplo rápido – OS Hardening (Linux):
       cd 01-OS-Hardening
       sudo bash harden_ubuntu.sh
       
-📋 Requisitos
+## 📋 Requisitos
 
 Linux (Ubuntu/Debian o CentOS recomendado)
 Kali Linux para auditorías
