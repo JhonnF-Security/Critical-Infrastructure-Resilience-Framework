@@ -1,6 +1,6 @@
 # Critical Infrastructure Resilience Framework
 
-![Critical Infrastructure Resilience](https://via.placeholder.com/850x200/0A2540/00FFAA?text=Critical+Infrastructure+Resilience+Framework)
+![Critical Infrastructure Resilience Framework](https://via.placeholder.com/850x250/0A1F3A/00D4FF?text=Critical+Infrastructure+Resilience+Framework)
 
 **Framework técnico para el blindaje y protección integral de infraestructuras organizacionales e infraestructuras críticas** (energía, agua, transporte, salud, etc.).
 
@@ -30,10 +30,10 @@ Un conjunto modular de scripts, configuraciones y guías para implementar **defe
    git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
    cd Critical-Infrastructure-Resilience-Framework
 
-Elige un módulo y lee su README interno.
-Ejecuta los scripts siempre primero en un entorno de prueba.
+2. Elige un módulo y lee su README interno.
+3. Ejecuta los scripts siempre primero en un entorno de prueba.
 
-Ejemplo rápido – OS Hardening (Linux):
+## Ejemplo rápido – OS Hardening (Linux):
       
       cd 01-OS-Hardening
       sudo bash harden_ubuntu.sh
@@ -44,34 +44,34 @@ Linux (Ubuntu/Debian o CentOS recomendado)
 Kali Linux para auditorías
 Permisos de root para aplicar configuraciones
 
-📊 Casos de uso reales
+## 📊 Casos de uso reales
 
 Hardening de servidores en plantas industriales
 Protección de sistemas SCADA / ICS
 Auditorías de cumplimiento para infraestructuras críticas
 Automatización de checklists de seguridad para pymes
 
-🛠️ Tecnologías y herramientas usadas
+## 🛠️ Tecnologías y herramientas usadas
 
 Bash scripting
 Nmap, iptables, fail2ban, AppArmor/SELinux
 OpenSSL, rsync, cryptsetup
 Futuras integraciones con Python + IA
 
-📈 Roadmap (Próximos pasos)
+## 📈 Roadmap (Próximos pasos)
 
 Añadir scripts funcionales en cada módulo
 Crear plantillas de reportes PDF
 Versión completa en inglés
 Integración con el Kali Auto-Audit script
 
-🤝 Contribuciones
+## 🤝 Contribuciones
 Las contribuciones son bienvenidas. Próximamente se agregará el archivo CONTRIBUTING.md.
 
-📄 Licencia
+## 📄 Licencia
 MIT License — ver el archivo LICENSE
 
-Autor
+## Autor
 Jhonn Freddy Arias
 Ingeniero en Sistemas | Especializándome en Ciberseguridad y Resiliencia de Infraestructuras Críticas
 LinkedIn • GitHub
