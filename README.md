@@ -1,8 +1,8 @@
 # Critical Infrastructure Resilience Framework
 
-![Banner](https://via.placeholder.com/800x200/0A2540/00FFAA?text=Critical+Infrastructure+Resilience)  
+![Banner](https://via.placeholder.com/800x200/0A2540/00FFAA?text=Critical+Infrastructure+Resilience)
 
-**Framework técnico para el blindaje y protección integral de infraestructuras organizacionales e infraestructuras críticas (energía, agua, transporte, salud, etc.).**
+**Framework técnico para el blindaje y protección integral de infraestructuras organizacionales e infraestructuras críticas** (energía, agua, transporte, salud, etc.).
 
 Un conjunto modular de scripts, configuraciones y guías para implementar **defensa en profundidad** en entornos reales.
 
@@ -29,3 +29,49 @@ Un conjunto modular de scripts, configuraciones y guías para implementar **defe
    ```bash
    git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
    cd Critical-Infrastructure-Resilience-Framework
+
+Elige un módulo y lee su README interno.
+Ejecuta los scripts con precaución (siempre en entorno de prueba primero).
+
+Ejemplo rápido – OS Hardening (Linux):
+   
+    Bashcd 01-OS-Hardening
+    sudo bash harden_ubuntu.sh
+    
+📋 Requisitos
+
+-Linux (Ubuntu/Debian o CentOS recomendado)
+-Kali Linux para auditorías
+-Permisos de root para aplicar configuraciones
+
+📊 Casos de uso reales
+
+-Hardening de servidores en plantas industriales
+-Protección de sistemas SCADA / ICS
+-Auditorías de cumplimiento para infraestructuras críticas
+-Automatización de checklists de seguridad para pymes
+
+🛠️ Tecnologías y herramientas usadas
+
+-Bash scripting
+-Nmap, iptables, fail2ban, AppArmor/SELinux
+-OpenSSL, rsync, cryptsetup
+-Futuras integraciones con Python + IA
+
+📈 Roadmap (Próximos pasos)
+
+-Añadir scripts funcionales en cada módulo
+-Crear plantillas de reportes PDF
+-Versión en inglés completa
+-Integración con el Kali Auto-Audit script
+
+🤝 Contribuciones
+Las contribuciones son bienvenidas. Lee CONTRIBUTING.md (próximamente).
+
+📄 Licencia
+MIT License – ver LICENSE
+
+- Autor
+Jhonn Freddy Arias
+Ingeniero en Sistemas | Especializándome en Ciberseguridad y Resiliencia de Infraestructuras Críticas
+LinkedIn | GitHub
