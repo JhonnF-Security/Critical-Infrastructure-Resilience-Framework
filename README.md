@@ -1,5 +1,6 @@
 # Critical Infrastructure Resilience Framework
-![Critical Infrastructure Resilience Framework](https://via.placeholder.com/850x250/0A2540/00FFAA?text=Critical+Infrastructure+Resilience+Framework)
+
+![Critical Infrastructure Resilience Framework](https://files.oaiusercontent.com/file-VlWvX9f2z5K8pL9mNqR7sT?se=2026-04-10T03%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D3628800%2C%20immutable&rscd=attachment%3B%20filename%3Dimage_card_0.jpg&sig=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
 
 **Framework técnico para el blindaje y protección integral de infraestructuras organizacionales e infraestructuras críticas** (energía, agua, transporte, salud, etc.).
 
