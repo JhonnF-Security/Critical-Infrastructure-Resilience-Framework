@@ -30,20 +30,24 @@ Este módulo cubre las siguientes fases de hardening:
 
 ## 🚀 Cómo utilizar este módulo
 
-```bash
     cd 01-OS-Hardening
 
 Revisa las subcarpetas según la fase que necesites aplicar.
-Importante: Siempre prueba las configuraciones primero en una máquina virtual antes de aplicarlas en producción.
-📊 Evidencia de implementación
-Puedes ver la implementación real, pantallazos y resultados de auditorías en el archivo:
-EVIDENCIA_HARDENING.md
-Próximos pasos
 
-Convertir las configuraciones manuales en scripts automatizados (*.sh)
-Añadir script de verificación automática
-Crear versión para Red Hat Enterprise Linux / CentOS
-Mejorar la suite de hardening con más automatización
+## Importante: 
+    Siempre prueba las configuraciones primero en una máquina virtual antes de aplicarlas en producción.
+    
+## 📊 Evidencia de implementación
+Puedes ver la implementación real, pantallazos y resultados de auditorías en el archivo:
+
+      EVIDENCIA_HARDENING.md
+
+## Próximos pasos
+
+* Convertir las configuraciones manuales en scripts automatizados (*.sh)
+* Añadir script de verificación automática
+* Crear versión para Red Hat Enterprise Linux / CentOS
+* Mejorar la suite de hardening con más automatización
 
 
 Autor: Jhonn Freddy Arias
