@@ -1,69 +1,59 @@
 # 01 - OS Hardening
 
-**Módulo: Linux Server Hardening Baseline (LSHB)**
+**Linux Server Hardening Baseline (LSHB)**
 
-Este módulo contiene guías, configuraciones y scripts para aplicar **endurecimiento seguro** en servidores Linux (Ubuntu 24.04), siguiendo estándares **CIS Benchmarks** y **NIST SP 800-123**.
-
-Forma parte del **Critical Infrastructure Resilience Framework**.
+Módulo principal del **Critical Infrastructure Resilience Framework** enfocado en el endurecimiento seguro de servidores Linux (Ubuntu 24.04).
 
 ## 🎯 Objetivo
 
-Reducir la superficie de ataque, mejorar la resiliencia y lograr un nivel aceptable de seguridad en servidores Linux para infraestructuras críticas y entornos empresariales.
+Aplicar mejores prácticas de seguridad para reducir la superficie de ataque, mejorar la resiliencia y alcanzar estándares recomendados por **CIS Benchmarks** y **NIST**.
 
-## 📁 Estructura de la carpeta
+## 📊 Resultados Actuales (Abril 2026)
 
-- `harden_ubuntu_safe.sh` → Script principal de hardening seguro
-- `EVIDENCIA_HARDENING.md` → Implementación real, pantallazos y resultados detallados
-- `01-Bare-Metal-Installation/` → Guías de instalación inicial
-- `02-Network-Provisioning/` → Configuración de red
-- `LSHB-Shield-Suite/` → Suite de configuraciones
-- `assets/` → Recursos visuales
+- **Hardening Index (Lynis)**: **65/100**
+- Firewall: UFW configurado (puerto SSH 21041)
+- Protección contra fuerza bruta: Fail2Ban activo
+- Acceso remoto: Autenticación por llave SSH
+- Root login: Deshabilitado
+- Auditoría: `auditd` habilitado
 
-## 🚀 Cómo usar el script
+## 🚀 Script Principal
+
+[`harden_ubuntu_safe.sh`](./harden_ubuntu_safe.sh) — Versión segura recomendada para pruebas
+
+**Cómo ejecutarlo:**
 
     cd 01-OS-Hardening
+    chmod +x harden_ubuntu_safe.sh
+    sudo ./harden_ubuntu_safe.sh
 
-# Dar permisos de ejecución
-     
-     chmod +x harden_ubuntu_safe.sh
+📁 Estructura
 
-# Ejecutar el script (modo seguro)
-     sudo ./harden_ubuntu_safe.sh
-     
-Importante: Siempre prueba primero en una máquina virtual antes de aplicarlo en producción.
+* harden_ubuntu_safe.sh → Script automatizado de hardening
+* EVIDENCIA_HARDENING.md → Evidencia completa, pantallazos y logs
+* 01-Bare-Metal-Installation/ → Instalación inicial segura
+* 02-Network-Provisioning/ → Configuración de red
+* assets/ → Recursos visuales
 
-## 📊 Resultados obtenidos (Abril 2026)
-
-* Hardening Index (Lynis): 65/100
-* Firewall UFW configurado correctamente (puerto SSH 21041)
-* Fail2Ban activo y configurado
-* Acceso por llave SSH implementado
-* Root login deshabilitado
-* Actualizaciones automáticas configuradas
-* Auditoría básica (auditd) activada
-
-## 🛡️ Fases cubiertas
+🛡️ Fases implementadas
 
 * Actualización y parcheo del sistema
-*Configuración de Firewall (UFW)
-* Protección contra fuerza bruta (Fail2Ban)
+* Configuración de Firewall (UFW)
+* Protección contra ataques automatizados (Fail2Ban)
 * Blindaje básico de SSH
 * Auditoría del sistema
 
-## Próximos pasos
+Próximos objetivos
 
-* Mejorar Fail2Ban con más jails
-* Implementar AIDE (integridad de archivos)
-* Configurar alertas por correo
+* Alcanzar Hardening Index ≥ 80
+* Implementar AIDE (verificación de integridad)
+* Configurar alertas de seguridad
 * Crear versión para Red Hat / CentOS
-* Alcanzar Hardening Index > 80
 
-## 📄 Documentación adicional
+📄 Documentación adicional
 
-* EVIDENCIA_HARDENING.md → Evidencia completa y pantallazos
-* harden_ubuntu_safe.sh → Script ejecutable
-
+* Ver evidencia completa
 
 Autor: Jhonn Freddy Arias
-Parte de: Critical Infrastructure Resilience Framework
+Framework: Critical Infrastructure Resilience Framework
 
