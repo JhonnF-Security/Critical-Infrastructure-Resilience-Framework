@@ -15,7 +15,7 @@ Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar me
 ## 📊 Resultados Actuales (Abril 2026)
 
 - **Hardening Index (Lynis)**: **65/100**
-- Firewall: UFW configurado correctamente (puerto 21041)
+- Firewall: UFW configurado correctamente
 - Protección anti-brute force: Fail2Ban activo
 - Acceso remoto: Autenticación por llave SSH
 - Root login: Deshabilitado
@@ -27,42 +27,51 @@ Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar me
 
 **Cómo usarlo:**
 
-```bash
-cd 01-OS-Hardening
-chmod +x harden_ubuntu_safe.sh
-sudo ./harden_ubuntu_safe.sh
-Nota: Siempre prueba primero en una máquina virtual.
-📋 Checklist de Hardening
+    cd 01-OS-Hardening
+    chmod +x harden_ubuntu_safe.sh
+    sudo ./harden_ubuntu_safe.sh
+    
+Nota: Ejecuta siempre primero en entorno de prueba (máquina virtual).
 
- Actualización completa del sistema
- Configuración de Firewall UFW
- Fail2Ban instalado y configurado
- Root login deshabilitado
- Autenticación por llave SSH implementada
- Auditoría básica (auditd) activada
- Implementar AIDE (integridad de archivos)
- Configurar alertas por correo
- Fortalecer GRUB con contraseña
- Alcanzar Hardening Index ≥ 80
+## 📁 Estructura de la carpeta
 
-📁 Estructura de la carpeta
+* harden_ubuntu_safe.sh → Script automatizado de hardening
+* EVIDENCIA_HARDENING.md → Evidencia completa y pantallazos
+* 01-Bare-Metal-Installation/ → Guías de instalación inicial
+* 02-Network-Provisioning/ → Configuración de red
+* assets/ → Recursos visuales
 
-harden_ubuntu_safe.sh → Script automatizado
-EVIDENCIA_HARDENING.md → Evidencia completa y pantallazos
-01-Bare-Metal-Installation/ → Instalación inicial
-02-Network-Provisioning/ → Configuración de red
-assets/ → Recursos visuales
+## 🛡️ Fases implementadas
 
-Próximos objetivos
+* Actualización y parcheo del sistema
+* Configuración de Firewall (UFW)
+* Protección contra fuerza bruta (Fail2Ban)
+* Blindaje básico de SSH
+* Auditoría del sistema
 
-Mejorar Fail2Ban con más jails
-Implementar AIDE (verificación de integridad)
-Configurar alertas por correo
-Crear versión para Red Hat / CentOS
+## Próximos objetivos
 
-📄 Documentación adicional
+* Alcanzar Hardening Index ≥ 80
+* Implementar AIDE (integridad de archivos)
+* Configurar alertas por correo
+* Crear versión para Red Hat / CentOS
 
-Ver evidencia completa
+## 📋 Checklist de Hardening
+
+- [x] Actualización completa del sistema
+- [x] Configuración de Firewall UFW
+- [x] Fail2Ban instalado y configurado
+- [x] Root login deshabilitado
+- [x] Autenticación por llave SSH implementada
+- [x] Auditoría básica (`auditd`) activada
+- [ ] Implementar AIDE (integridad de archivos)
+- [ ] Configurar alertas por correo
+- [ ] Fortalecer GRUB con contraseña
+- [ ] Alcanzar Hardening Index ≥ 80
+
+## 📄 Documentación adicional
+
+* Ver evidencia completa
 
 
 Autor: Jhonn Freddy Arias
