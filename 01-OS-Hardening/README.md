@@ -46,33 +46,25 @@ Nota: Siempre prueba primero en una máquina virtual.
  Fortalecer GRUB con contraseña
  Alcanzar Hardening Index ≥ 80
 
-📁 Estructura
+📁 Estructura de la carpeta
 
-* harden_ubuntu_safe.sh → Script automatizado de hardening
-* EVIDENCIA_HARDENING.md → Evidencia completa, pantallazos y logs
-* 01-Bare-Metal-Installation/ → Instalación inicial segura
-* 02-Network-Provisioning/ → Configuración de red
-* assets/ → Recursos visuales
-
-🛡️ Fases implementadas
-
-* Actualización y parcheo del sistema
-* Configuración de Firewall (UFW)
-* Protección contra ataques automatizados (Fail2Ban)
-* Blindaje básico de SSH
-* Auditoría del sistema
+harden_ubuntu_safe.sh → Script automatizado
+EVIDENCIA_HARDENING.md → Evidencia completa y pantallazos
+01-Bare-Metal-Installation/ → Instalación inicial
+02-Network-Provisioning/ → Configuración de red
+assets/ → Recursos visuales
 
 Próximos objetivos
 
-* Alcanzar Hardening Index ≥ 80
-* Implementar AIDE (verificación de integridad)
-* Configurar alertas de seguridad
-* Crear versión para Red Hat / CentOS
+Mejorar Fail2Ban con más jails
+Implementar herramientas de integridad (AIDE)
+Crear versión para Red Hat / CentOS
+Documentar proceso completo de hardening
 
 📄 Documentación adicional
 
-* Ver evidencia completa
+Ver evidencia completa
 
 Autor: Jhonn Freddy Arias
-Framework: Critical Infrastructure Resilience Framework
+Parte del proyecto: Critical Infrastructure Resilience Framework
 
