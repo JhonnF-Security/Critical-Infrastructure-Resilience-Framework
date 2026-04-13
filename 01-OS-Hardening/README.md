@@ -31,6 +31,21 @@ Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar me
     chmod +x harden_ubuntu_safe.sh
     sudo ./harden_ubuntu_safe.sh
 
+Nota: Siempre prueba primero en una máquina virtual.
+
+📋 Checklist de Hardening
+
+ Actualización completa del sistema
+ Configuración de Firewall UFW
+ Fail2Ban instalado y configurado
+ Root login deshabilitado
+ Autenticación por llave SSH implementada
+ Auditoría básica (auditd) activada
+ Implementar AIDE (integridad de archivos)
+ Configurar alertas por correo
+ Fortalecer GRUB con contraseña
+ Alcanzar Hardening Index ≥ 80
+
 📁 Estructura
 
 * harden_ubuntu_safe.sh → Script automatizado de hardening
