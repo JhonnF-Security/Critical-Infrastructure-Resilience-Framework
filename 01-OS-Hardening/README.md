@@ -1,25 +1,29 @@
 # 01 - OS Hardening
 
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4.4+-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
 **Linux Server Hardening Baseline (LSHB)**
 
-Módulo principal del **Critical Infrastructure Resilience Framework** enfocado en el endurecimiento seguro de servidores Linux (Ubuntu 24.04).
+Módulo principal del **Critical Infrastructure Resilience Framework** enfocado en el endurecimiento seguro de servidores Linux Ubuntu 24.04.
 
 ## 🎯 Objetivo
 
-Aplicar mejores prácticas de seguridad para reducir la superficie de ataque, mejorar la resiliencia y alcanzar estándares recomendados por **CIS Benchmarks** y **NIST**.
+Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar mejores prácticas recomendadas por **CIS Benchmarks** y **NIST SP 800-123**.
 
 ## 📊 Resultados Actuales (Abril 2026)
 
 - **Hardening Index (Lynis)**: **65/100**
-- Firewall: UFW configurado (puerto SSH 21041)
-- Protección contra fuerza bruta: Fail2Ban activo
+- Firewall: UFW configurado correctamente
+- Protección anti-brute force: Fail2Ban activo
 - Acceso remoto: Autenticación por llave SSH
 - Root login: Deshabilitado
-- Auditoría: `auditd` habilitado
+- Auditoría básica: `auditd` habilitado
 
 ## 🚀 Script Principal
 
-[`harden_ubuntu_safe.sh`](./harden_ubuntu_safe.sh) — Versión segura recomendada para pruebas
+[`harden_ubuntu_safe.sh`](./harden_ubuntu_safe.sh) — Versión segura recomendada
 
 **Cómo ejecutarlo:**
 
