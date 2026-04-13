@@ -69,9 +69,10 @@ Nota: Ejecuta siempre primero en entorno de prueba (máquina virtual).
 - [ ] Fortalecer GRUB con contraseña
 - [ ] Alcanzar Hardening Index ≥ 80
 
-## 📄 Documentación adicional
+## 📄 Archivos incluidos
 
-* Ver evidencia completa
+* harden_ubuntu_safe.sh → Script seguro
+* EVIDENCIA_HARDENING.md → Evidencia y pantallazos
 
 
 Autor: Jhonn Freddy Arias
