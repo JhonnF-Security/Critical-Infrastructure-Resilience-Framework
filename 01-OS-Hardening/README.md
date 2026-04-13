@@ -67,4 +67,3 @@ Ver evidencia completa
 
 Autor: Jhonn Freddy Arias
 Parte del proyecto: Critical Infrastructure Resilience Framework
-
