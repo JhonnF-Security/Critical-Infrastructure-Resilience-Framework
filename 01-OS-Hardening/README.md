@@ -15,7 +15,7 @@ Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar me
 ## 📊 Resultados Actuales (Abril 2026)
 
 - **Hardening Index (Lynis)**: **65/100**
-- Firewall: UFW configurado correctamente
+- Firewall: UFW configurado correctamente (puerto 21041)
 - Protección anti-brute force: Fail2Ban activo
 - Acceso remoto: Autenticación por llave SSH
 - Root login: Deshabilitado
@@ -25,14 +25,13 @@ Reducir la superficie de ataque, mejorar la resiliencia del sistema y aplicar me
 
 [`harden_ubuntu_safe.sh`](./harden_ubuntu_safe.sh) — Versión segura recomendada
 
-**Cómo ejecutarlo:**
+**Cómo usarlo:**
 
-    cd 01-OS-Hardening
-    chmod +x harden_ubuntu_safe.sh
-    sudo ./harden_ubuntu_safe.sh
-
+```bash
+cd 01-OS-Hardening
+chmod +x harden_ubuntu_safe.sh
+sudo ./harden_ubuntu_safe.sh
 Nota: Siempre prueba primero en una máquina virtual.
-
 📋 Checklist de Hardening
 
  Actualización completa del sistema
@@ -57,13 +56,14 @@ assets/ → Recursos visuales
 Próximos objetivos
 
 Mejorar Fail2Ban con más jails
-Implementar herramientas de integridad (AIDE)
+Implementar AIDE (verificación de integridad)
+Configurar alertas por correo
 Crear versión para Red Hat / CentOS
-Documentar proceso completo de hardening
 
 📄 Documentación adicional
 
 Ver evidencia completa
+
 
 Autor: Jhonn Freddy Arias
 Parte del proyecto: Critical Infrastructure Resilience Framework
