@@ -2,76 +2,40 @@
 
 ![Critical Infrastructure Resilience Framework](https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework/blob/main/banner.jpg?raw=true)
 
-**Framework técnico para el blindaje y protección integral de infraestructuras organizacionales e infraestructuras críticas** (energía, agua, transporte, salud, etc.).
+**Framework práctico para el endurecimiento y resiliencia de infraestructuras críticas.**
 
-Un conjunto modular de scripts, configuraciones y guías para implementar **defensa en profundidad** en entornos reales.
+Este es mi **repositorio público de portafolio**, donde muestro proyectos reales aplicados en ciberseguridad con enfoque en hardening de servidores Linux.
 
-## ✨ Características principales
+## Lo que encontrarás aquí (Versión Gratuita)
 
-- **Modular y escalable**: 5 módulos independientes pero integrados.
-- **Enfoque práctico**: Scripts Bash listos para usar en Kali Linux / servidores Linux.
-- **Visión 2026**: Incluye automatización con IA para detección y respuesta.
-- **Orientado a infraestructuras críticas**: Alineado con principios NIST, ISO 27001 y resiliencia operativa.
+- Módulo 01: OS Hardening para Ubuntu 24.04 (script básico + checklist)
+- Resultados reales de implementación (Hardening Index 65/100)
+- Documentación de procesos y evidencias
 
-## 📁 Estructura del Framework
+## Versión Premium disponible
 
-| Módulo | Nombre                        | Objetivo principal |
-|--------|-------------------------------|--------------------|
-| 01     | [OS Hardening](./01-OS-Hardening) | Endurecimiento de sistemas operativos (Linux/Windows) |
-| 02     | [Network Security](./02-Network-Security) | Protección de redes, firewalls, segmentación y monitoreo |
-| 03     | [Identity & IAM](./03-Identity-IAM) | Gestión de identidades, MFA, RBAC y control de accesos |
-| 04     | [Data Resilience](./04-Data-Resilience) | Cifrado, backups, recuperación y protección de datos |
-| 05     | [AI-Powered Automation](./05-AI-Powered-Automation) | Automatización inteligente de seguridad (en desarrollo) |
+¿Quieres la versión completa y profesional?
 
-## 🚀 Cómo usar el Framework
+La **Versión Premium** incluye:
+- Script avanzado y más automatizado
+- Plantillas profesionales de reportes para clientes
+- Checklist editable + versión PDF
+- Video tutorial paso a paso
+- Actualizaciones futuras
+- Soporte por 30 días
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/JhonnF-Security/Critical-Infrastructure-Resilience-Framework.git
-   cd Critical-Infrastructure-Resilience-Framework
+**Precio:** $39 USD (pago único + actualizaciones)
 
-2. Elige un módulo y lee su README interno.
-3. Ejecuta los scripts siempre primero en un entorno de prueba.
+[Comprar Versión Premium →](https://gumroad.com/l/cirf-hardening-pack) ← Próximamente
 
-## Ejemplo rápido – OS Hardening (Linux):
-      
-      cd 01-OS-Hardening
-      sudo bash harden_ubuntu.sh
-      
-## 📋 Requisitos
+## Módulos actuales
 
-Linux (Ubuntu/Debian o CentOS recomendado)
-Kali Linux para auditorías
-Permisos de root para aplicar configuraciones
+- **[01 - OS Hardening](./01-OS-Hardening)** → Hardening de servidores Linux
+- **02 - Network Security** → En desarrollo
 
-## 📊 Casos de uso reales
+---
 
-Hardening de servidores en plantas industriales
-Protección de sistemas SCADA / ICS
-Auditorías de cumplimiento para infraestructuras críticas
-Automatización de checklists de seguridad para pymes
-
-## 🛠️ Tecnologías y herramientas usadas
-
-Bash scripting
-Nmap, iptables, fail2ban, AppArmor/SELinux
-OpenSSL, rsync, cryptsetup
-Futuras integraciones con Python + IA
-
-## 📈 Roadmap (Próximos pasos)
-
-Añadir scripts funcionales en cada módulo
-Crear plantillas de reportes PDF
-Versión completa en inglés
-Integración con el Kali Auto-Audit script
-
-## 🤝 Contribuciones
-Las contribuciones son bienvenidas. Próximamente se agregará el archivo CONTRIBUTING.md.
-
-## 📄 Licencia
-MIT License — ver el archivo LICENSE
-
-## Autor
-Jhonn Freddy Arias
+**Jhonn Freddy Arias**  
 Ingeniero en Sistemas | Especializándome en Ciberseguridad y Resiliencia de Infraestructuras Críticas
-LinkedIn • GitHub
+
+[LinkedIn](https://www.linkedin.com/in/jhonn-freddy-arias-7978411a2/)
